@@ -1,0 +1,109 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+}
+
+/* Left column styles */
+.left-col {
+  width: 30%;
+}
+
+#search-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#city-input {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 100%;
+}
+
+button {
+  background-color: #333;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+#search-history {
+  margin-top: 20px;
+}
+
+#search-history-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#search-history-list li {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  margin-bottom: 5px;
+  padding: 8px;
+}
+
+#search-history-list li:hover {
+  background-color: #e0e0e0;
+}
+
+/* Right column styles */
+.right-col {
+  width: 65%;
+}
+
+#current-weather,
+#forecast {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+#current-weather div,
+#forecast div {
+  margin-bottom: 10px;
+}
+
+#forecast-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  .left-col,
+  .right-col {
+    width: 100%;
+  }
+
+  #forecast-container {
+    justify-content: center;
+  }
+}
